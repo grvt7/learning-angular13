@@ -1,0 +1,11 @@
+<h1> {{title}} </h1>
+<br>
+<h2 *ngFor="let data of numbers"> {{data}} </h2>
+<h1>For Loops on Objects in Array</h1>
+<h2 *ngFor="let item of numberRep"> {{item.number}} :: {{item.spell}} </h2>
+
+<h1>Nested For Loops</h1>
+<h2 *ngFor="let item of numberRep">
+  {{item.number}}
+  <h2 *ngFor="let data of item.spell">{{data}}</h2>
+</h2>

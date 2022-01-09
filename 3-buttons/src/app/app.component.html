@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+<!-- Attribute Properties are added inside a tags body -->
+<!--  For Commit 19b8d63fe72c703d14c8405cca4f9be1326ac553-->
+<!-- <button (click)="getData('Hi There')">Click Me</button>
+<br><br>
+<input type="text" #box1 placeholder="Key Up" (keyup)="getData(box1.value)">
+<br><br>
+<input type="text" #box2 placeholder="Key Down" (keydown)="getData(box2.value)">
+<br><br>
+<input type="text" #box3 placeholder="Key Down" (blur)="getData(box3.value)">
+<br><br>
+<input type="text" #box4 placeholder="Key Input" (input)="getData(box4.value)">
+
+<h1 (mouseover)="getData('mouseOver')">Mouse Over Warning</h1>
+<h1 (mouseleave)="getData('mouseLeave')">Mouse Leave Warning</h1>
+<h1 (mousemove)="getData('mouseMove')">Mouse Move Warning</h1> -->
+
+<!-- For current commit: Display Input to Screen KeyUp. Function in app.component.ts-->
+<input type="text" #box (keyup)="getValue(box.value)" placeholder="Enter Text" name="username">
+<h2>Display Value = {{displayValue}}</h2><br/>
+Adding button to get the value<br/>
+
+<!-- DisplayValue interpolation is used here the same as above hence both values will be updates. -->
+<input type="text" #box2 placeholder="Enter Text" name="username">
+<button (click)="getValue(box2.value)">Click Me</button>
+<h2>Display Value = {{displayValue}}</h2><br/>
