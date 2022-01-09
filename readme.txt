@@ -1,6 +1,6 @@
 The project requires node and angular/cli installed in the system with bin added to the path.
 
-The node modules have been removed from all the projects, hence the projects will not run.
+The node modules have been removed from all the projects, as a result the projects will not run.
 
 To run the projects 
 1. Open Command Prompt and navigate to the project root directory.
