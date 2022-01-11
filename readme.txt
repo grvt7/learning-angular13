@@ -1,4 +1,4 @@
-The project requires node and angular/cli installed in the system with bin added to the path.
+The projects requires node and angular/cli installed in the system with bin added to the path.
 
 The node modules have been removed from all the projects, as a result the projects will not run.
 
