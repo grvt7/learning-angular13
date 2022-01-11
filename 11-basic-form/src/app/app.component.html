@@ -1,0 +1,17 @@
+<h1> {{title}} <br> Forms Module <br> </h1>
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+  <input type="text" ngModel name="user" placeholder="Enter User Name">
+  <br><br>
+  <input type="email" ngModel name="email" placeholder="Enter User Email">
+  <br><br>
+  <input type="password" ngModel name="password" placeholder="Enter User Password">
+  <br><br>
+  <button>Submit</button>
+</form>
+
+<!-- Displaying the User Data -->
+<ul>
+  <li> {{userData.user}} </li>
+  <li> {{userData.email}} </li>
+  <li> {{userData.password}} </li>
+</ul>

@@ -1,0 +1,12 @@
+<h1 id="app-header">{{title}}</h1>
+<br>
+<label>Enter Task : </label>
+<input type="text" placeholder="Enter New Task" #task>
+<br><br>
+<button (click)="addTask(task.value)">Add Task</button>
+<br>
+<br>
+<h1>List :</h1><br>
+<ul *ngFor="let item of list">
+  <li>{{item.id}} :: {{item.task}} :: <button (click)="removeItem(item.id)">Remove</button> </li>
+</ul>
