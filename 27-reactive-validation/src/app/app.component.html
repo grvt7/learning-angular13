@@ -1,0 +1,13 @@
+<h1 id="app-title">{{title}}</h1>
+
+<!-- Adding the formGroup property and assigning it the object inside the component.ts. -->
+<!-- Add formControlName to each field to map them to the fields inside the object. -->
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()" method="post">
+  <input type="text" placeholder="Enter Name" formControlName="username"><br>
+  <span *ngIf="username && username.invalid && username.touched" style="color: red;">This input field is not
+    Valid</span><br><br>
+  <input type="password" placeholder="Enter Password" formControlName="password"><br>
+  <span *ngIf="password && password.invalid && password.touched" style="color: red;">This input field is not
+    Valid</span><br><br>
+  <button [disabled]="loginForm.invalid">Log In</button>
+</form>

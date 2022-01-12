@@ -1,0 +1,9 @@
+<h1 id="app-title">{{title}}</h1>
+
+<!-- Adding the formGroup property and assigning it the object inside the component.ts. -->
+<!-- Add formControlName to each field to map them to the fields inside the object. -->
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()" >
+  <input type="text" placeholder="Enter Name" formControlName="user"><br><br>
+  <input type="password" placeholder="Enter Password" formControlName="password"><br><br>
+  <button>Log In</button>
+</form>

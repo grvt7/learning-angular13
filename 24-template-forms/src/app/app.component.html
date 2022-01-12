@@ -1,0 +1,7 @@
+<h1>{{title | uppercase}}</h1>
+
+<form #loginForm = "ngForm" (ngSubmit)="loginUser(loginForm.value)">
+  <input type="text" name="name" placeholder="Enter Name" ngModel><br>
+  <input type="password" name="password" placeholder="Enter Password" ngModel><br>
+  <button>Login</button>
+</form>

@@ -1,0 +1,18 @@
+<h1>{{title | uppercase}}</h1>
+<h1>{{title | lowercase}}</h1>
+<h1>{{title}}</h1>
+<br><br>
+<!-- Without Pipes -->
+<h1>{{today}}</h1>
+<!-- With Pipes -->
+<h1>{{today | date}}</h1>
+<h1>{{today | date:'fullDate'}}</h1>
+<h1>{{capString(title)}}</h1>
+
+<!-- Advanced Pipes -->
+<h1>{{title | slice :3:8}}</h1>
+<h1>{{user | json | uppercase}}</h1>
+<h1>{{003.3400 | number:'1.2-3'}}</h1>
+<h1>{{100 | currency : 'USD'}}</h1>
+<h1>{{100 | currency : 'GBP'}}</h1>
+<h1>{{100 | currency : 'INR'}}</h1>

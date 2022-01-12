@@ -1,0 +1,9 @@
+<h1 id="title">{{title}}</h1>
+<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+  <input type="text" #name="ngModel" pattern="[a-zA-z]+$" name="name" placeholder="Enter Name" ngModel required><br>
+  <span *ngIf="name.invalid && name.touched" style="color: red;">Please enter a Valid Name</span><br>
+  <input type="password" #password="ngModel" minlength="4" name="password" placeholder="Enter Password" ngModel
+    required><br>
+  <span *ngIf="password.invalid && password.touched" style="color: red;">Please enter a Valid Password</span><br>
+  <button [disabled]="loginForm.invalid">Log In</button>
+</form>
