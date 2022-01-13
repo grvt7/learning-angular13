@@ -1,0 +1,9 @@
+<h1 id="app-title"> {{title}} </h1>
+
+<form style="text-align: center;" #booksForm = "ngForm" (submit)="getBookData(booksForm.value)">
+  <input type="text" placeholder="Enter Book Code" name="bookCode" ngModel><br><br>
+  <input type="text" placeholder="Enter Book Name" name="bookName" ngModel><br><br>
+  <input type="text" placeholder="Enter Book Author" name="bookAuthor" ngModel><br><br>
+  <input type="text" placeholder="Enter Date Added" name="dateAdded" ngModel><br><br>
+  <button>Submit Data</button>
+</form>
